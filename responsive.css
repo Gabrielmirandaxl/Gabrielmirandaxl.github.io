@@ -1,0 +1,264 @@
+@media (min-width: 0px) and (max-width: 480px){
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    --primary: #0099ff;
+    --secundary: #ffffff;
+    --preto: #000000;
+}
+
+/* menu */
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    align-items: center;
+    background-color: #000000;
+    box-shadow: 0px 0px 1px var(--secundary);
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 0px 10px var(--primary);
+   
+    
+}
+
+.header .logo{
+    margin: 0px 0px 0px 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: var(--secundary);
+}
+
+span:nth-child(1){
+    color: var(--primary);
+}
+
+
+.header .nav-links .list-links{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    left: 450px;
+    top: 60px;
+    background-color: var(--secundary);
+    width: 150px;
+    height: 180px;
+    border-radius: 10px 0px 0px 10px;
+    transition: 400ms;
+}
+
+.header .nav-links .list-links.show-list{
+  left: 250px;
+  transition: 400ms;
+}
+
+
+.header .nav-links .list-links li{
+   margin: 10px 0px 0px 0px;
+}
+
+
+.header .nav-links .list-links li a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primary);
+    font-weight: bold;
+    transition: 400ms;
+ }
+
+ .header .nav-burguer{
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff00;
+  border: none;
+}
+
+
+.header .nav-burguer hr{
+  width: 15px;
+margin: 2px;
+border: 2px solid var(--primary);
+}
+
+
+
+ /* fim menu */
+
+
+ /* Home */
+
+
+ #Home{
+  padding-top: 9em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--preto);
+  height: 550px;
+}
+
+
+#Home .content{
+  text-align: center;
+  
+}
+
+
+#Home .content .icons-social-and-cv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  
+  
+  
+   }
+
+#Home .content .icons-social-and-cv .icons-social .links-social ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+  
+   }
+  
+   
+   #Home .content .icons-social-and-cv .icons-social .links-social ul li{
+     margin: 0px 10px 0px 0px;
+     
+      }
+  
+      
+   #Home .content .icons-social-and-cv .icons-social .links-social ul li i{
+     color: var(--secundary);
+     font-size: 1.5em;
+     
+      }
+
+      
+    #Home .content .icons-social-and-cv .cv {
+     margin: 20px 0px 0px 0px;
+    }
+
+#Home .img-code img{
+  width: 210px;
+  height: 210px;
+}
+
+ /* fim Home */
+
+
+ 
+ /* Sobre */
+
+
+ #Sobre{
+  background-color: var(--secundary);
+  height:650px ;
+  
+  }
+
+ #Sobre .personal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+
+#Sobre .personal .content-personal header{
+text-align: center;
+
+ 
+}
+
+
+#Sobre .personal .content-personal p{
+ text-align: center;
+  
+}
+
+
+
+#Sobre .img-personal img{
+ margin: 0px 0px 0px 20px;
+  width: 200px;
+  height: 200px;
+  }
+
+ /* fim Sobre */
+
+ /* Skills */
+
+ #Skills{
+  padding-top: 5em;
+  background-color: #000000;
+  height:550px ;
+
+}
+
+
+   
+ #Skills .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 820px;
+  gap: 6em;
+ }
+
+ .linha{
+  display: none;
+ }
+  
+    
+
+  
+ /* fim Skills*/
+
+ 
+ 
+ #Projects {
+  background-color: #970808;
+  height:650px ;
+}
+
+
+
+#Projects .cards-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 220vh;
+  gap: 7em;
+ }
+
+ 
+#Projects .cards-projects  .card-project{
+ padding-bottom: 2em;
+ }
+
+}
